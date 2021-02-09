@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+ROUTE::get('/top', 'PostController@index')->name('top');
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('index');
 });
